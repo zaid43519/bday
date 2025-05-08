@@ -1,0 +1,148 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #FF7A8F, #FF9F61);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#countdown {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #FFDFBA;
+}
+
+#timer {
+    color: #FF6F61;
+    font-size: 2.5em;
+}
+
+/* Gallery */
+#gallery {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Guestbook */
+#guestbook {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 80%;
+    padding: 15px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #FF6F61;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF3D47;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+}
+
+footer button {
+    background-color: #FF6F61;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #FF3D47;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    #countdown {
+        font-size: 1.5em;
+    }
+
+    #timer {
+        font-size: 2em;
+    }
+}
